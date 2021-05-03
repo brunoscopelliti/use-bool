@@ -1,24 +1,24 @@
-# template-react-hook
+# use-bool
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/template-react-hook/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/@bscop/template-react-hook.svg?style=flat)](https://www.npmjs.com/package/@bscop/template-react-hook)
-[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/template-react-hook.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/template-react-hook)
-[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/template-react-hook)](https://app.codecov.io/gh/brunoscopelliti/template-react-hook/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/use-bool/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@bscop/use-bool.svg?style=flat)](https://www.npmjs.com/package/@bscop/use-bool)
+[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/use-bool.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/use-bool)
+[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/use-bool)](https://app.codecov.io/gh/brunoscopelliti/use-bool/)
 
-A template to create a new React custom hook.
+A shortcut for React.useState<boolean>. 
 
 ## Install
 
 ```
-npm i @bscop/template-react-hook
+npm i @bscop/use-bool
 ```
 
 ## Usage
 
 ```js
-import useHook from "@bscop/template-react-hook";
+import useBool from "@bscop/use-bool";
 
-useHook();
+const [state, setTrue, setFalse] = useBool();
 ```
 
 ## Contribute
