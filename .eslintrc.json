@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "bruno",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+  }
+}
