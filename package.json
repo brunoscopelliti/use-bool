@@ -31,7 +31,13 @@
     "LICENSE",
     "README.md"
   ],
-  "keywords": [],
+  "keywords": [
+    "react",
+    "react hook",
+    "use-bool",
+    "shortcut useState",
+    "useState boolean"
+  ],
   "author": "Bruno Scopelliti",
   "license": "MIT",
   "bugs": {
