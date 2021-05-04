@@ -1,12 +1,31 @@
-import { useState, useCallback } from "react";
+import { useCallback, useState } from "react";
 
-const useCounter =
-  () => {
-    const [count, setCount] = useState(0);
+/**
+ * @callback setState
+ * @returns {void}
+ */
 
-    const increment = useCallback(() => setCount((x) => x + 1), []);
+/**
+ * A shortcut for React.useState<boolean>.
+ * @name useBool
+ * @param {Boolean} initialValue
+ * @returns {[boolean, setState, setState]}
+ */
+const useBool =
+  (initialValue) => {
+    const [value, setValue] = useState(!!initialValue);
 
-    return { count, increment };
+    const setTrue = useCallback(
+      () => { setValue(true); },
+      []
+    );
+
+    const setFalse = useCallback(
+      () => { setValue(false); },
+      []
+    );
+
+    return [value, setTrue, setFalse];
   };
 
-export default useCounter;
+export default useBool;

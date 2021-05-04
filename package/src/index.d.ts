@@ -1,8 +1,5 @@
-type HookState = {
-  count : number;
-  increment : () => void;
-};
+type SetState = () => void;
 
-declare const useCounter : () => HookState;
+declare const useBool : (initialValue ?: boolean) => [boolean, SetState, SetState];
 
-export default useCounter;
+export default useBool;
