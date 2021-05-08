@@ -10,7 +10,7 @@ describe("useBool", () => {
     expect(state).toBe(false);
   });
 
-  it("returns the state, and the handler to change it", () => {
+  it("returns the state, and the handlers to change it", () => {
     let state, makeTrue, makeFalse;
 
     renderHook(
