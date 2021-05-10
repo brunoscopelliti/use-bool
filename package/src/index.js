@@ -8,7 +8,7 @@ import { useCallback, useState } from "react";
 /**
  * A shortcut for React.useState<boolean>.
  * @name useBool
- * @param {Boolean} initialValue
+ * @param {boolean} [initialValue]
  * @returns {[boolean, setState, setState]}
  */
 const useBool =
