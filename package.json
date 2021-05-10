@@ -1,6 +1,6 @@
 {
   "name": "@bscop/use-bool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A shortcut for React.useState<boolean>.",
   "main": "package/dist/index.js",
   "module": "package/dist/index.es.js",
